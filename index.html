@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en" xmlns:img="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ready To Race</title>
+</head>
+<body>
+<header id="header" class="row">
+    <img src="images/header-bg.jpg" class="" alt="no-image">
+    <div class="row  bg-transparent h5">
+        <div class="wrapper">
+            <nav class="nav-bar">
+                <button id="nav-btn" class="nav-button" onclick="showDiv()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-list"
+                         viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                </button>
+                <div class="nav-left">
+
+                    <a class="nav--item" href="#">MODELS</a>
+                    <a class="nav--item" href="#">BOOK A TEST RIDE</a>
+                    <a class="nav--item" href="#">POWER PARTS &POWERWEAR</a>
+                    <a class="nav--item" href="#">RACING</a>
+                    <a class="nav--item" href="#">KTM WORLD</a>
+                    <a class="nav--item" href="#">SERVICE</a>
+
+                </div>
+                <nav id="mobile-navbar" class="mobile-nav">
+                    <div class="mobile-navbar" id="mobile--nav">
+                        <button id="close-btn " class="close-button" onclick="showDiv()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="rgb(255,102,0)"
+                                 class="bi bi-x-lg" viewBox="0 0 16 16">
+                                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                            </svg>
+                        </button>
+
+
+                    </div>
+                    <a class="nav--item" href="#">MODELS</a>
+                    <a class="nav--item" href="#">BOOK A TEST RIDE</a>
+                    <a class="nav--item" href="#">POWER PARTS &POWERWEAR</a>
+                    <a class="nav--item" href="#">RACING</a>
+                    <a class="nav--item" href="#">KTM WORLD</a>
+                    <a class="nav--item" href="#">SERVICE</a>
+                    <div class="nav-footer">
+                        <div class="nav-inner-footer footer-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="rgb(255,102,0)"
+                                 class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                            </svg>
+                            <p>Find a dealer</p>
+
+                        </div>
+                        <div class="nav-inner-footer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="rgb(255,102,0)"
+                                 class="bi bi-globe" viewBox="0 0 16 16">
+                                <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+                            </svg>
+                            <p>India</p>
+
+                        </div>
+                    </div>
+
+                </nav>
+                <div class="nav-right">
+                    <div class="icons">
+                        <a href="#" id="countries">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="rgb(255,102,0)"
+                                 class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                            </svg>
+                        </a>
+                        <a href="#" id="locations">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="rgb(255,102,0)"
+                                 class="bi bi-globe" viewBox="0 0 16 16">
+                                <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="logo" id="ktm-logo">
+                        <img src="images/logo.jpg" alt="">
+                    </div>
+
+                </div>
+
+            </nav>
+            <div class="row header-section-2">
+                <div class="col-12 d-flex  flex-column justify-content-center align-items-center ">
+                    <h6 class="text-white">TAKE THE LONG WAY HOME</h6>
+                    <h1 class="text-white head-text-1">KTM 390 ADVENTURE</h1>
+                    <button class="book-now ">
+                        BOOK NOW
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header>
+<section id="section-2" class="row d-flex ">
+    <div class="col-12">
+        <div class="wrapper d-flex align-items-xl-center align-items-sm-start ms-5 flex-column">
+            <h1 class=" text-black  head-text-1">THE BRAND NEW 2023</h1>
+            <h1 class="head-text-1">KTM 890 ADVENTURER</h1>
+        </div>
+        <div class="wrapper d-flex justify-content-xl-center align-items-center flex-xl-row flex-column  ">
+            <button class="btn-black ">CONFIGURATOR</button>
+            <button class="btn-black-2">EXPLORE THE RANGE</button>
+        </div>
+
+
+    </div>
+    <div class="col-12">
+        <figure>
+            <img src="images/section-2.jpg" alt="no-image">
+        </figure>
+        <figure>
+            <img src="images/section-2-mobile.jpg" alt="no-image">
+        </figure>
+    </div>
+
+</section>
+<section class="row gallery-col  d-xl-flex justify-content-xl-between  p-4">
+
+    <div class=" d-flex col-md-4 col-sm-12 flex-column align-items-sm-center align-items-xl-start  p-4">
+        <figure>
+            <img src="images/gallery-1.jpg" alt="">
+        </figure>
+        <figcaption class="display-5 ">#GET DUKED</figcaption>
+        <figcaption class="display-4 ">KTM NAKED</figcaption>
+    </div>
+    <div class="d-flex col-md-4 col-sm-12 flex-column align-items-sm-center align-items-xl-start p-4">
+        <figure>
+            <img src="images/gallery-2.jpg" alt="">
+        </figure>
+        <figcaption class="display-5">#GO ADVENTURE</figcaption>
+        <figcaption class="display-4">KTM TRAVEL</figcaption>
+
+    </div>
+    <div class="d-flex col-md-4 col-sm-12 flex-column align-items-sm-center align-items-xl-start p-4">
+        <figure>
+            <img src="images/gallery-3.jpg" alt="">
+        </figure>
+        <figcaption class="display-5">#RACE-BRED PERFOMANCE</figcaption>
+        <figcaption class="display-4">KTM SUPERSPORT</figcaption>
+
+    </div>
+
+</section>
+<section id="section-3" class="row gallery-col d-xl-flex justify-content-space-between p-4">
+    <div class=" d-flex col-md-4 col-12 flex-column align-items-center align-items-xl-start p-4">
+        <figure>
+            <img src="images/section-3-img1.jpg" alt="">
+        </figure>
+        <datetime class="display-5">
+            Feb 8 2023
+        </datetime>
+        <figcaption class="display-4 ">KTM AND MOTOREX: TWENTY YEARS STRONG, FAST AND STILL FLYING</figcaption>
+        <p class="display-5">The KTM Group’s racing and production alliance with high quality lubricant firm,
+            Motorex, will reach two decades of longevity in 2023. A renewed deal between Europe’s largest motorcycle
+            manufacturer and the Swiss
+        </p>
+    </div>
+    <div class="d-flex col-md-4 col-12 flex-column align-items-center align-items-xl-start p-4">
+        <figure>
+            <img src="images/section-3-img-2.jpg" alt="">
+        </figure>
+        <datetime class="display-5">
+            Jan 25 2023
+        </datetime>
+        <figcaption class="display-4">KTM CELEBRATES 19TH DAKAR RALLY TITLE WITH 2023 WINNER KEVIN...</figcaption>
+        <p class="display-5">Securing victory at the 2023 Dakar Rally with Kevin Benavides, KTM secured its
+            19th win at the most grueling and iconic of all off-road events. Not only that, KTM secured an incredible
+            one-two finish with the figh
+        </p>
+
+    </div>
+    <div class="d-flex col-md-4 col-12 flex-column align-items-center align-items-xl-start p-4">
+        <figure>
+            <img src="images/section-3-img-3.jpg" alt="">
+        </figure>
+        <datetime class="display-5">
+            Oct 13 2022
+        </datetime>
+        <figcaption class="display-4">MANUEL LETTENBICHLER WINS 2022 FIM HARD ENDURO WORLD CHAMPIONSHIP!</figcaption>
+        <p class="display-5">Red Bull KTM Factory Racing’s Manuel Lettenbichler has won the 2022 FIM Hard
+            Enduro World Championship. Claiming a dominant victory at the eighth and final round of the series -
+            Hixpania Hard
+        </p>
+
+    </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/v4-shims.min."></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
