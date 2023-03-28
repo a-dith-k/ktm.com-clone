@@ -208,6 +208,9 @@ img[src="images/section-2.jpg"]{
 .p-5{
     padding: 4rem !important;
 }
+.p-1{
+    padding: 5rem !important;
+}
 
 .display-5{
     font-size:2rem;
@@ -219,9 +222,60 @@ img[src="images/section-2.jpg"]{
     font-weight: bolder;
 
 }
+.display-3{
+    font-size: 5rem;
+    font-weight: bolder;
+}
 
 #section-3 p{
     font-family: trade-gothic;
+}
+.hr{
+    height: 1px;
+}
+
+
+#section-4 img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.readytorace{
+
+    background:none;
+    border: 1px solid rgb(255,255,255);
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:6rem ;
+}
+
+.readytorace:hover{
+    border: 1px solid rgb(255,102,0);
+    color:rgb(255,102,0);
+}
+
+.sign-up{
+    margin:0;
+    border:2px solid rgb(255,102,0);
+    background: white;
+    color:rgb(255,102,0) ;
+}
+
+.sign-up:hover{
+    width: 25rem;
+    background: #FF6600FF;
+    color: white;
+    font-size: 2rem;
+}
+
+.icon-container svg{
+    fill: white;
+    width: 25px;
+    height: 25px;
 }
 
 
