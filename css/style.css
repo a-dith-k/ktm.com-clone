@@ -410,8 +410,13 @@ pre{
         margin: 0;
 
     }
+    .head-text{
+        margin-top: 5rem;
+    }
     .head-text-1{
+
         font-size:3rem;
+
 
     }
     .section-2 .wrapper{
@@ -431,13 +436,12 @@ pre{
         padding: 2rem;
     }
     header{
-        margin-bottom: 15rem;
     }
     .btn-black{
         width: 15rem;
         height:5.5rem;
         font-size: 1.5rem;
-        margin: 2rem;
+        margin:2rem  0rem 0rem 0rem;
     }
 
     .btn-black-2{
@@ -445,7 +449,7 @@ pre{
         height:5.5rem;
 
         font-size: 1.5rem;
-        margin: 2rem 0rem;
+        margin: 1rem 0rem 0rem 0rem;
     }
 
     .book-now{
@@ -475,6 +479,9 @@ pre{
         margin-top:2rem ;
         font-size: 1.5rem;
     }
+
+
+
 
 
 
