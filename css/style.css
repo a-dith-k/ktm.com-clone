@@ -97,13 +97,15 @@ header > img {
 .mobile-nav{
     background:rgba(0,0,0,0.5);
     width: 100%;
-    height:auto;
+    height:100vh;
     position: absolute;
     padding: 15rem 0px 8rem 5rem;
     left: 0;
     top: 0;
     display:none;
 }
+
+
 .mobile-nav .nav--item{
     display: block;
     margin-bottom:7rem ;
@@ -234,11 +236,24 @@ img[src="images/section-2.jpg"]{
     height: 1px;
 }
 
+#section-4{
 
+}
 #section-4 img{
     width: 100%;
     height: 100%;
 
+}
+
+#section-4 img {
+    object-fit: none;
+    object-position: center;
+    width: 100%;
+    max-height: 240px;
+}
+
+.d-grid{
+     font-family: 'Gothic A1', sans-serif;
 }
 
 .readytorace{
@@ -272,11 +287,30 @@ img[src="images/section-2.jpg"]{
     font-size: 2rem;
 }
 
-.icon-container svg{
+.icon-container svg {
     fill: white;
     width: 25px;
     height: 25px;
+
 }
+#footer-end{
+    font-family: 'Gothic A1', sans-serif;
+}
+
+pre{
+    font-size: 15px;
+}
+
+#section-3 figcaption{
+    font-size:4rem;
+}
+
+#section-3 p{
+    font-size:2rem;
+}
+
+
+
 
 
 /* Extra small devices (phones, 600px and down) */
@@ -408,6 +442,18 @@ img[src="images/section-2.jpg"]{
         margin-top: 5rem;
     }
 
+    pre{
+        font-size: 5px;
+    }
+
+    #section-3 figcaption{
+        font-size:2rem;
+    }
+
+    #section-3 p{
+        font-size:1.5rem;
+    }
+
 
 
 
@@ -444,6 +490,7 @@ img[src="images/section-2.jpg"]{
     .nav-button{
         z-index: 4;
     }
+
 
 }
 
