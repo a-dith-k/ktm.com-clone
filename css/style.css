@@ -103,6 +103,7 @@ header > img {
     left: 0;
     top: 0;
     display:none;
+
 }
 
 
@@ -299,6 +300,7 @@ img[src="images/section-2.jpg"]{
 
 pre{
     font-size: 15px;
+    padding: 5rem 20rem;
 }
 
 #section-3 figcaption{
@@ -307,6 +309,17 @@ pre{
 
 #section-3 p{
     font-size:2rem;
+}
+
+#section-4 h1{
+    font-size: 5rem;
+    font-weight: bold;
+
+}
+
+#section-4 p{
+    margin-top:3rem ;
+    font-size: 3rem;
 }
 
 
@@ -452,6 +465,15 @@ pre{
 
     #section-3 p{
         font-size:1.5rem;
+    }
+
+    #section-4 h1{
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+    #section-4 p{
+        margin-top:2rem ;
+        font-size: 1.5rem;
     }
 
 
